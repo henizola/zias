@@ -1,0 +1,486 @@
+/*
+Theme Name: Nextarch
+Theme URI: http://shtheme.com/demosd/nextarch
+Author: Shtheme
+Author URI: https://themeforest.net/user/shtheme
+Description: In 2021, our default theme lets you create a responsive magazine website with a sleek, modern design. Feature your favorite homepage content in either a grid or a slider. Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. Creating a magazine website with WordPress has never been easier.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: nextarch
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* ========TABLE OF CONTENTS==========
+00. Body, links, hgroup, paragraphs, general styles
+01. Fixed header & Navigation
+02. Section Intro (Home)
+03. Section About
+04. Section Resume
+05. Section Portfolio
+06. Section Blog
+07. Section Contact
+08. Footer
+09. Loader
+10. Responsive design
+
+/*--------------------------------------------------
+    00. Body, links, hgroup, paragraphs, general styles
+---------------------------------------------------*/
+
+.comment-form-cookies-consent {
+	display: none;
+}
+
+.comment-respond form input[type="submit"] {
+	margin-left: 15px;
+	cursor: pointer;
+}
+
+ul.next-form-block li .img-wrapper img {
+	border-radius: 50%;
+	width: 90px;
+	max-width: 90px;
+	height: auto;
+}
+
+.next-form-wrapper h4 a {
+	text-transform: capitalize;
+}
+
+a.comment-reply-link {
+	color: #95c93f;
+	font-size: 15px;
+}
+
+#nextarch-main .comment-title {
+	font-size: 32px;
+	text-transform: capitalize;
+	margin-bottom: 15px;
+}
+
+h3.comment-reply-title,
+h3.comment-title {
+	font-size: 32px;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+}
+
+p.logged-in-as {
+	margin-left: 15px;
+	color: #333;
+	margin-bottom: 25px;
+	font-size: 15px;
+}
+
+@media (min-width: 768px) {
+	.offset-md-1 {
+		margin-right: 8.333333%;
+		margin-left: 0%;
+	}
+}
+
+.nextarch-sidebar-part .single-widget {
+	background: #faf8f7;
+	padding: 30px;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+
+.nextarch-sidebar-part .widget_search form,
+.search-custom form {
+	position: relative;
+}
+
+.nextarch-sidebar-part .widget_search form input,
+.search-custom form input {
+	width: 100%;
+	padding: 10px;
+	border: 0;
+	background: #fff;
+	margin-bottom: 0;
+}
+
+.nextarch-sidebar-part .widget_search form button,
+.search-custom form button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: transparent;
+	color: #000;
+	border: 0;
+	padding: 10px;
+	cursor: pointer;
+	margin-top: 0px;
+}
+
+.nextarch-sidebar-part .widget_search form button:focus,
+.search-custom form button:focus {
+	outline: none;
+}
+
+.nextarch-sidebar-part .recent-posts ul {
+	margin-bottom: 0px;
+}
+
+.nextarch-sidebar-part .recent-posts ul li {
+	font-size: 15px;
+	line-height: 1.5em;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	display: block;
+	overflow: hidden;
+	border-bottom: 1px solid #eee;
+}
+
+.nextarch-sidebar-part .recent-posts ul li:last-child {
+	border: none;
+	padding-bottom: 0px;
+}
+
+.nextarch-sidebar-part .recent-posts .recent .thum {
+	width: 90px;
+	overflow: hidden;
+	float: left;
+}
+
+.nextarch-sidebar-part .recent-posts .recent a {
+	display: block;
+	margin-left: 105px;
+	margin-top: 10px;
+	color: #333;
+	font-size: 15px;
+}
+
+.nextarch-sidebar-part .widget_categories ul li {
+	font-size: 15px;
+	line-height: 1.5em;
+	margin-bottom: 10px;
+}
+
+.nextarch-sidebar-part .widget_categories ul li a {
+	font-size: 15px;
+	color: #333;
+}
+
+.nextarch-sidebar-part .widget_categories ul li a:before {
+	content: "\f054";
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	margin-right: 10px;
+	font-size: 11px;
+}
+
+.nextarch-sidebar-part .recent-posts .recent a:hover,
+.nextarch-sidebar-part .widget_categories ul li a:hover {
+	color: #95c93f;
+}
+
+.nextarch-sidebar-part .widget_categories ul li:hover a:before {
+	margin-right: 7px;
+	margin-left: 3px;
+}
+
+.nextarch-sidebar-part ul.wp-tag-cloud li {
+	display: inline-block;
+	background: #95c93f;
+	border: 1px solid #95c93f;
+	padding: 7px 17px;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	text-decoration: none;
+	color: #fff;
+	transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	margin: 3px;
+	margin-right: 1px;
+}
+
+.nextarch-sidebar-part ul.wp-tag-cloud li a {
+	font-size: 15px !important;
+}
+
+.nextarch-sidebar-part ul.wp-tag-cloud li:hover {
+	background: #fff;
+	color: #95c93f;
+}
+
+.nextarch-sidebar-part h3.widget-title {
+	font-size: 28px;
+	letter-spacing: 0.5px;
+}
+
+.blog-entry div.cont div.info {
+	font-size: 15px;
+	color: #333;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	text-transform: capitalize;
+}
+
+.blog-entry div.cont div.info i {
+	margin-right: 3px;
+}
+
+.blog-entry div.cont div.info a {
+	color: #333;
+}
+
+.blog-entry div.cont div.info a:hover {
+	color: #95c93f;
+}
+
+p.info-distance {
+	display: inline-block;
+	margin: 0 8px;
+}
+
+h3.blog-title {
+	font-size: 36px;
+	letter-spacing: 0.5px;
+	margin-bottom: 0px;
+}
+
+p.blog-excerpt {
+	font-size: 15px;
+	color: #333;
+}
+
+a.read-btn {
+	display: inline-block;
+	background: #95c93f;
+	border: 1px solid #95c93f;
+	padding: 7px 20px;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	text-decoration: none;
+	color: #fff;
+	transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	margin: 3px;
+	margin-right: 0px;
+	font-size: 16px;
+}
+
+a.read-btn:hover {
+	background: #fff;
+	color: #95c93f;
+}
+
+.blog-entry {
+	margin-bottom: 90px;
+}
+
+.nextarch-pagination {
+	text-align: center;
+}
+
+.nextarch-pagination li {
+	display: inline-block;
+	margin: 0 5px;
+	-webkit-box-shadow: 0px 5px 20px rgb(0 0 0 / 5%);
+	box-shadow: 0px 5px 20px rgb(0 0 0 / 5%);
+}
+
+.nextarch-pagination li span {
+	background: #fff;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #333;
+	font-weight: 400;
+	background-color: #95c93f;
+	border: 1px solid #95c93f;
+	color: #fff;
+}
+
+.nextarch-pagination li a {
+	background: #fff;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #333;
+	font-weight: 400;
+}
+
+.nextarch-pagination li a:hover {
+	opacity: 1;
+	text-decoration: none;
+	box-shadow: 0px 16px 28px 0px rgb(0 0 0 / 20%);
+}
+
+div.gallery-size-full {
+	display: none;
+}
+
+iframe {
+	margin-bottom: 60px;
+}
+
+form .next-form-component span.your-message {
+	width: 100%;
+}
+
+form .next-form-component span.your-message textarea {
+	height: 120px;
+}
+
+.search-custom h4 {
+	font-size: 31px;
+	line-height: 35px;
+	letter-spacing: 0.5px;
+}
+
+.search-custom form {
+	width: 70%;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.search-custom form input {
+	border: 1px solid #ccc;
+}
+
+.search-custom form button[type="submit"] {
+	right: 5px;
+	padding: 11px;
+}
+
+.error-page-content {
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 150px;
+}
+
+.error-page-content h1 {
+	font-size: 120px;
+	line-height: 150px;
+}
+
+.error-page-content div.text {
+	font-size: 20px;
+	color: #333;
+	margin-bottom: 30px;
+}
+
+.error-page-content a.btn {
+	display: inline-block;
+	background: #95c93f;
+	border: 1px solid #95c93f;
+	padding: 7px 20px;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	text-decoration: none;
+	color: #fff;
+	transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	margin: 3px;
+	margin-right: 0px;
+	font-size: 16px;
+	text-transform: capitalize;
+}
+
+.error-page-content a.btn:hover {
+	background: #fff;
+	color: #95c93f;
+}
+
+section.blog {
+	margin-bottom: 100px;
+}
+
+form .contact-form p {
+	display: none;
+}
+
+form .contact-form input[type="submit"] {
+	cursor: pointer;
+	margin-top: 0px;
+}
+
+.dark-contact form input[type="submit"]:hover {
+	background-color: #323232;
+}
+
+@media (min-width: 1200px) {
+	.works .gallery.full-width {
+		height: 594px !important;
+	}
+
+	.works .gallery.full-width .row .col-md-4:nth-child(4),
+	.works .gallery.full-width .row .col-md-4:nth-child(5),
+	.works .gallery.full-width .row .col-md-4:nth-child(6) {
+		top: 297px !important;
+	}
+
+	.works .gallery.full-width .row .col-md-4:nth-child(4) {
+		left: 0px !important;
+	}
+
+	.works .gallery.full-width .row .col-md-4:nth-child(5) {
+		left: 380px !important;
+	}
+}
+
+.sidebar .services ul li a:after {
+	display: none;
+}
+
+.works .section-head h4 {
+	width: 120%;
+}
+
+.next-section-contact form p {
+	display: none;
+}
+
+.next-section-contact form input[type="submit"] {
+	margin-top: 0px;
+}
+
+.next-section-contact form .next-form-component {
+	margin-bottom: 0px;
+}
+
+h3.comment-title {
+	margin-top: 45px;
+	margin-bottom: -25px;
+}
+
+ul.next-form-block .next-form-wrapper h4 {
+	color: #272727;
+	font-size: 19px;
+	font-family: "Didact Gothic", sans-serif;
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+
+.single-content h4 {
+	font-size: 35px;
+	text-transform: capitalize;
+	color: #272727;
+	font-family: "Oswald", sans-serif;
+}
+
+.wpcf7-form-control-wrap {
+	width: 100%;
+}
