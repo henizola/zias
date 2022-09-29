@@ -489,3 +489,29 @@ ul.next-form-block .next-form-wrapper h4 {
 .news-image{
     max-width: 50vw;
   }
+
+  .flex{
+
+	display: flex;
+	justify-content: space-between;
+  }
+
+  .fill{
+	
+	display: flex;
+	height: 30px;
+	width: 30vw;
+	justify-content: space-between;
+	text-align: center;
+  }
+
+  .fill a{
+	width: 100%;
+	cursor: pointer;
+  }
+
+
+  .projecton{
+	color:#95c93f!important;
+	font-weight: bold!important;
+  }
